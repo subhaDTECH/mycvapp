@@ -1,0 +1,27 @@
+{% extends 'core/home.html' %}
+{% load static %}
+{% block content %}
+ <h1 class="mb-5 pb-5 text-white">contact us</h1>
+ <div class="mb-4">
+  <form method="POST" class="text-white mb-5 mx-4" novalidate>
+  {% csrf_token %}
+    {% if form %}
+     {% for fm in form %}
+     <p>{{fm.label_tag}}</p>
+     <p>{{fm}}</p>
+   <span class="text-white">{{fm.errors}}</span> 
+     
+     {% endfor %}
+     <Button class="btn btn-outline-primary">Sumbit</Button>
+
+
+    {% else   %}
+    not found
+    
+    {% endif %}
+  </form>
+ </div>
+
+
+
+{% endblock content %}

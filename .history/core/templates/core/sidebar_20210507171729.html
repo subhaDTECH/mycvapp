@@ -1,0 +1,27 @@
+{% load static %}
+<div class='col-sm-4 text-center  px-4'>
+    <div class="nav_box border-right border-white h-100 ">
+    <div class="img_div">
+    <figure>
+    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="img-fluid">
+    </figure>
+    </div>
+        <nav class="nav_bar">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link link_tag  mx-5 active mt-2 text-white bg-dark shadow" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-5  mt-2 pb-2 text-white bg-dark shadow" href="{% url 'about' %}">About Me</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  mx-5  mt-2 pb-2 text-white bg-dark shadow" href="{% url 'service' %}">Service</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  mx-5 mt-2 pb-2 text-white bg-dark shadow" href="{% url 'contact' %}">Contact</a>
+        </li>
+        </ul>
+        </nav>
+    </div>
+  
+   </div>
